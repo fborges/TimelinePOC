@@ -3,18 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D60BE6842339908F009882B1 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60BE6832339908F009882B1 /* Store.swift */; };
+		D60BE686233990AF009882B1 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60BE685233990AF009882B1 /* State.swift */; };
 		D6BD52DD233430A00022C0E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BD52DC233430A00022C0E7 /* AppDelegate.swift */; };
 		D6BD52DF233430A00022C0E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BD52DE233430A00022C0E7 /* ViewController.swift */; };
 		D6BD52E2233430A00022C0E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6BD52E0233430A00022C0E7 /* Main.storyboard */; };
 		D6BD52E4233430A10022C0E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6BD52E3233430A10022C0E7 /* Assets.xcassets */; };
 		D6BD52E7233430A10022C0E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6BD52E5233430A10022C0E7 /* LaunchScreen.storyboard */; };
+		DC4CB54BA67C582D223FACAB /* Pods_ReduxingPOC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20D580C4169F1A98EEA8CB71 /* Pods_ReduxingPOC.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03222418CD73C2758A8C403B /* Pods-ReduxingPOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReduxingPOC.release.xcconfig"; path = "Target Support Files/Pods-ReduxingPOC/Pods-ReduxingPOC.release.xcconfig"; sourceTree = "<group>"; };
+		20D580C4169F1A98EEA8CB71 /* Pods_ReduxingPOC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReduxingPOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A82635826436F81D7894FE88 /* Pods-ReduxingPOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReduxingPOC.debug.xcconfig"; path = "Target Support Files/Pods-ReduxingPOC/Pods-ReduxingPOC.debug.xcconfig"; sourceTree = "<group>"; };
+		D60BE6832339908F009882B1 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		D60BE685233990AF009882B1 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		D6BD52D9233430A00022C0E7 /* ReduxingPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReduxingPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6BD52DC233430A00022C0E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6BD52DE233430A00022C0E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +37,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC4CB54BA67C582D223FACAB /* Pods_ReduxingPOC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B73AA950565ED60F1D104AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20D580C4169F1A98EEA8CB71 /* Pods_ReduxingPOC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D6BD52D0233430A00022C0E7 = {
 			isa = PBXGroup;
 			children = (
 				D6BD52DB233430A00022C0E7 /* ReduxingPOC */,
-				D6BD52DA233430A00022C0E7 /* Products */,
+				EFE28D58AFB8A3F72BA64429 /* Pods */,
+				9B73AA950565ED60F1D104AF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,6 +67,7 @@
 				D6BD52D9233430A00022C0E7 /* ReduxingPOC.app */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		D6BD52DB233430A00022C0E7 /* ReduxingPOC */ = {
@@ -60,8 +79,20 @@
 				D6BD52E3233430A10022C0E7 /* Assets.xcassets */,
 				D6BD52E5233430A10022C0E7 /* LaunchScreen.storyboard */,
 				D6BD52E8233430A10022C0E7 /* Info.plist */,
+				D60BE6832339908F009882B1 /* Store.swift */,
+				D60BE685233990AF009882B1 /* State.swift */,
 			);
 			path = ReduxingPOC;
+			sourceTree = "<group>";
+		};
+		EFE28D58AFB8A3F72BA64429 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D6BD52DA233430A00022C0E7 /* Products */,
+				A82635826436F81D7894FE88 /* Pods-ReduxingPOC.debug.xcconfig */,
+				03222418CD73C2758A8C403B /* Pods-ReduxingPOC.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D6BD52EB233430A10022C0E7 /* Build configuration list for PBXNativeTarget "ReduxingPOC" */;
 			buildPhases = (
+				8ED64972E0E82837EB646EE2 /* [CP] Check Pods Manifest.lock */,
 				D6BD52D5233430A00022C0E7 /* Sources */,
 				D6BD52D6233430A00022C0E7 /* Frameworks */,
 				D6BD52D7233430A00022C0E7 /* Resources */,
+				E4F4FFF35083F965F3714680 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,6 +163,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8ED64972E0E82837EB646EE2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReduxingPOC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4F4FFF35083F965F3714680 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReduxingPOC/Pods-ReduxingPOC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReduxingPOC/Pods-ReduxingPOC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReduxingPOC/Pods-ReduxingPOC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D6BD52D5233430A00022C0E7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -137,6 +212,8 @@
 			files = (
 				D6BD52DF233430A00022C0E7 /* ViewController.swift in Sources */,
 				D6BD52DD233430A00022C0E7 /* AppDelegate.swift in Sources */,
+				D60BE686233990AF009882B1 /* State.swift in Sources */,
+				D60BE6842339908F009882B1 /* Store.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +357,7 @@
 		};
 		D6BD52EC233430A10022C0E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A82635826436F81D7894FE88 /* Pods-ReduxingPOC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -289,7 +367,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.febezerra.ReduxingPOC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.febezerra.ReduxingPOCNonabort;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -298,6 +376,7 @@
 		};
 		D6BD52ED233430A10022C0E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03222418CD73C2758A8C403B /* Pods-ReduxingPOC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -307,7 +386,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.febezerra.ReduxingPOC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.febezerra.ReduxingPOCNonabort;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

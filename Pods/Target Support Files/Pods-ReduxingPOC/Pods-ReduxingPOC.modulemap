@@ -1,0 +1,6 @@
+framework module Pods_ReduxingPOC {
+  umbrella header "Pods-ReduxingPOC-umbrella.h"
+
+  export *
+  module * { export * }
+}
